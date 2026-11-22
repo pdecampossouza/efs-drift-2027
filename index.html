@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f39">
+  <title>EFS-Drift | Special Session at IFSA-EUSFLAT 2027</title>
+  <meta name="description" content="Evolving Fuzzy Systems under Concept Drift: Explainability and Optimization. An IFSA-EUSFLAT 2027 special session in Bari, Italy, 13–17 September 2027. Explore the topics, organizers and call for papers.">
+  <meta property="og:title" content="EFS-Drift · IFSA-EUSFLAT 2027">
+  <meta property="og:description" content="Evolving Fuzzy Systems under Concept Drift: Explainability and Optimization. Join us in Bari, 13–17 September 2027. Full paper deadline: 14 February 2027.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="conference-strip"><div class="wrap strip-inner"><span>A special session at <a href="https://eusflat.org/2027-conference/">IFSA–EUSFLAT 2027</a></span><span>Bari, Italy <span class="strip-divider">/</span> 13–17 September 2027</span></div></div>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="EFS-Drift home"><svg width="40" height="36" viewBox="0 0 40 36" aria-hidden="true"><path d="M2 29C10 29 8 7 17 7s7 22 15 22"/><path d="M10 29C18 29 16 13 25 13s7 16 13 16"/></svg><span>EFS<span class="brand-dash">—</span>Drift<span class="brand-year">2027</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16M2 14h16"/></svg></button>
+      <nav id="main-nav" aria-label="Main navigation"><a href="#about">The session</a><a href="#topics">Topics</a><a href="#dates">Dates</a><a href="#organizers">Organizers</a><a class="nav-cta" href="#call">Call for papers</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="short-line"></span> EFS-DRIFT · ACCEPTED SPECIAL SESSION</p>
+        <h1 id="hero-title">Evolving Fuzzy Systems under <em>Concept Drift</em></h1>
+        <p class="hero-subtitle">Explainability and Optimization</p>
+        <p class="hero-description">How can intelligent systems adapt to a changing world while keeping their knowledge understandable?</p>
+        <div class="button-row"><a class="button button-primary" href="#call">Explore the call for papers</a><a class="text-link" href="#topics">Discover the topics</a></div>
+        <p class="hero-note">Bringing together fuzzy systems, stream learning, explainable AI and optimization.</p>
+      </div>
+      <figure class="concept-panel" aria-labelledby="concept-title">
+        <div class="panel-heading"><span class="eyebrow">THE SCIENTIFIC CHALLENGE</span><span class="panel-glyph" aria-hidden="true">μ</span></div>
+        <h2 id="concept-title">The world changes. <br><em>Knowledge evolves.</em></h2>
+        <div class="concept-tabs" role="tablist" aria-label="Explore the session's research themes">
+          <button type="button" id="tab-detect" role="tab" aria-selected="true" aria-controls="concept-content" data-mode="detect">Detect</button>
+          <button type="button" id="tab-adapt" role="tab" aria-selected="false" aria-controls="concept-content" tabindex="-1" data-mode="adapt">Adapt</button>
+          <button type="button" id="tab-explain" role="tab" aria-selected="false" aria-controls="concept-content" tabindex="-1" data-mode="explain">Explain</button>
+        </div>
+        <div id="concept-content" role="tabpanel" aria-labelledby="tab-detect" tabindex="0" data-mode="detect">
+          <svg class="concept-plot" viewBox="0 0 450 280" role="img" aria-labelledby="plot-title plot-desc"><title id="plot-title">A conceptual view of evolving fuzzy knowledge</title><desc id="plot-desc">Three rows of illustrative fuzzy membership functions show how a model's representation can change over successive updates. These are schematic curves, not data or experimental results.</desc><defs><linearGradient id="fill-mint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3dcc7" stop-opacity=".28"/><stop offset="1" stop-color="#a3dcc7" stop-opacity=".01"/></linearGradient><linearGradient id="fill-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb38f" stop-opacity=".3"/><stop offset="1" stop-color="#ffb38f" stop-opacity=".01"/></linearGradient></defs><g stroke="#fff" stroke-opacity=".1"><path d="M60 72H430M60 157H430M60 242H430"/><path d="M130 22V247M220 22V247M310 22V247M400 22V247" stroke-dasharray="2 5"/></g><g fill="#c2d2d6" font-size="15" font-family="Arial,sans-serif"><text x="9" y="76">t₀</text><text x="9" y="161">t₁</text><text x="9" y="246">t₂</text><text x="60" y="270" font-size="13">Illustrative feature space</text><text x="332" y="270" font-size="13">Membership μ</text></g><g class="curve-series" id="curve-series"></g><g class="change-marker"><path d="M257 30V235" stroke="#ffb38f" stroke-width="1.2" stroke-dasharray="4 5"/><circle cx="257" cy="133" r="5" fill="#ffb38f"/><text x="273" y="105" fill="#ffb38f" font-size="13" font-family="Arial,sans-serif">Local change</text></g><g class="rule-marker"><circle cx="310" cy="186" r="5" fill="#a3dcc7"/><path d="M310 186L348 177" stroke="#a3dcc7"/><text x="306" y="166" fill="#a3dcc7" font-size="13" font-family="Arial,sans-serif">Updated rule</text></g></svg>
+          <p class="concept-caption" id="concept-caption">Identify where and when change occurs, and distinguish persistent drift from noise.</p>
+        </div>
+        <figcaption class="figure-note">Conceptual illustration · not experimental results</figcaption>
+      </figure>
+    </section>
+
+    <section class="dates-band" id="dates" aria-labelledby="dates-title">
+      <div class="wrap"><div class="dates-heading"><h2 id="dates-title">Mark your calendar</h2><a href="efs-drift-conference.ics" download>Add conference to calendar</a></div>
+        <div class="dates-grid">
+          <div class="date-item featured"><span class="date-label">Full paper deadline</span><time datetime="2027-02-14">14 February <span>2027</span></time><span class="date-note">23:59 Anywhere on Earth (AoE)</span></div>
+          <div class="date-item"><span class="date-label">Acceptance notification</span><time datetime="2027-04-16">16 April <span>2027</span></time></div>
+          <div class="date-item"><span class="date-label">Early registration</span><time datetime="2027-05-09">9 May <span>2027</span></time></div>
+          <div class="date-item"><span class="date-label">Conference in Bari</span><time datetime="2027-09-13">13–17 September <span>2027</span></time></div>
+        </div>
+        <p class="dates-source">Dates from the <a href="https://eusflat.org/2027-conference/program/">official conference call</a>, checked 21 November 2026. Please consult the conference website for updates.</p>
+      </div>
+    </section>
+
+    <section class="section wrap about-section" id="about" aria-labelledby="about-title">
+      <div class="section-label"><p class="eyebrow">ABOUT THE SESSION</p><h2 id="about-title">Adaptation that <br>we can <em>understand.</em></h2></div>
+      <div class="about-body"><p class="lead">Learning does not stop when the data change. Neither should our understanding of the model.</p><p>Evolving fuzzy and neuro-fuzzy systems can learn incrementally and adapt their structure. EFS-Drift asks how we can understand changes in the data, improve adaptation, and assess whether the knowledge and decisions of a model remain interpretable over time.</p><p>We welcome theoretical advances, new methods, reproducible benchmarks and real-world studies that connect evolving fuzzy systems with nonstationary environments.</p>
+        <div class="research-questions"><div><h3>Understand change</h3><p>Where does drift occur, and what does it affect?</p></div><div><h3>Learn through change</h3><p>How should rules, memory and forgetting evolve?</p></div><div><h3>Explain change</h3><p>Can predictions and adaptation decisions stay understandable?</p></div><div><h3>Optimize adaptation</h3><p>How do we balance accuracy, interpretability and resources?</p></div><div><h3>Demonstrate usefulness</h3><p>Which evaluations show a meaningful benefit?</p></div></div>
+      </div>
+    </section>
+
+    <section class="topics-section" id="topics" aria-labelledby="topics-title"><div class="wrap section">
+      <div class="section-top"><div><p class="eyebrow">TOPICS OF INTEREST</p><h2 id="topics-title">Different perspectives. <br><em>A shared challenge.</em></h2></div><p>Contributions may focus on one or more of these themes, with a clear connection to evolving fuzzy systems under changing conditions.</p></div>
+      <ul class="topics-list"><li>Concept drift detection, localization, characterization and explanation</li><li>Evolving fuzzy and neuro-fuzzy learning in nonstationary environments</li><li>Incremental learning with limited, delayed or noisy supervision</li><li>Rule evolution, knowledge extraction and semantic consistency</li><li>Interpretability of predictions and model adaptations</li><li>Multiobjective and online optimization of evolving fuzzy systems</li><li>Adaptive feature selection, rule simplification and complexity control</li><li>Uncertainty-aware adaptation and decision-making</li><li>Evaluation protocols, benchmarks and reproducible studies</li><li>Real-world applications of interpretable adaptive learning</li></ul>
+      <div class="application-line"><span>APPLICATIONS MAY INCLUDE</span><p>Energy <span>·</span> Health <span>·</span> Industrial monitoring <span>·</span> Environmental sensing <span>·</span> Finance</p></div>
+    </div></section>
+
+    <section class="section wrap organizers-section" id="organizers" aria-labelledby="organizers-title">
+      <div class="section-top"><div><p class="eyebrow">ORGANIZING TEAM</p><h2 id="organizers-title">Meet the <em>organizers.</em></h2></div><p>Connecting research in evolving learning, interpretable AI and evolutionary computation.</p></div>
+      <div class="organizer-grid">
+        <article class="organizer"><div class="organizer-top"><span class="monogram" aria-hidden="true">PS</span><span class="organizer-role">Lead organizer</span></div><h3>Paulo Vitor de <br>Campos Souza</h3><p class="affiliation">NOVA Information Management School <br>Universidade NOVA de Lisboa · Portugal</p><p class="bio">Interpretable artificial intelligence, fuzzy neural networks, evolving learning systems and explainable machine learning.</p><a class="email-link" href="mailto:psouza@novaims.unl.pt">psouza@novaims.unl.pt</a><a class="profile-link" href="https://novaims.unl.pt/pt/ensino/cursos/licenciaturas/ciencia-de-dados/corpo-docente/">Institutional directory</a></article>
+        <article class="organizer"><div class="organizer-top"><span class="monogram" aria-hidden="true">LR</span><span class="organizer-role">Co-organizer</span></div><h3>Liah <br>Rosenfeld</h3><p class="affiliation">NOVA Information Management School <br>Universidade NOVA de Lisboa · Portugal</p><p class="bio">Genetic programming, evolutionary computation, supervised learning and interpretable machine learning.</p><a class="email-link" href="mailto:lrosenfeld@novaims.unl.pt">lrosenfeld@novaims.unl.pt</a><a class="profile-link" href="https://novaresearch.unl.pt/en/persons/liah-rosenfeld/">Research profile</a></article>
+        <article class="organizer"><div class="organizer-top"><span class="monogram" aria-hidden="true">AS</span><span class="organizer-role">Co-organizer</span></div><h3>Alisson Marques <br>da Silva</h3><p class="affiliation">Federal University of Science and Innovation of Minas Gerais (UFCIMG) · Brazil</p><p class="bio">Evolving fuzzy and neuro-fuzzy systems, incremental learning, adaptive modeling and real-world applications.</p><a class="email-link" href="mailto:alissonmarques@gmail.com">alissonmarques@gmail.com</a><a class="profile-link" href="https://sig.cefetmg.br/sigaa/public/docente/portal.jsf?siape=3552958">Institutional profile</a></article>
+      </div>
+    </section>
+
+    <section class="call-section" id="call" aria-labelledby="call-title"><div class="wrap section call-grid">
+      <div><p class="eyebrow">CALL FOR PAPERS</p><h2 id="call-title">Bring your research. <br><em>Advance the conversation.</em></h2><p class="call-intro">Join the discussion on learning through change while keeping fuzzy knowledge interpretable and useful.</p><ol class="submission-steps"><li><h3>Connect your contribution to the session</h3><p>Make the link to evolving fuzzy systems in nonstationary environments explicit.</p></li><li><h3>Follow the conference guidelines</h3><p>Use the official formatting and submission instructions. Special-session papers follow the conference peer-review process.</p></li><li><h3>Submit through the official conference system</h3><p>Check the conference website for portal access and session selection. Contact the organizers if you have a question about fit.</p></li></ol><div class="button-row"><a class="button button-light" href="https://eusflat.org/2027-conference/program/">Official submission instructions</a><a class="light-link" href="EFS-Drift-2027-Call-for-Papers.pdf" download>Download session call (PDF)</a></div></div>
+      <aside class="submission-aside" aria-label="Submission essentials"><p class="eyebrow">FULL PAPER SUBMISSION</p><p class="deadline-large">14 <span>February 2027</span></p><p class="deadline-time">23:59 AoE · Anywhere on Earth</p><div class="format-item"><h3>Full papers</h3><p>12–15 pages, plus references. Accepted full papers are published in Springer’s LNCS series.</p></div><div class="format-item"><h3>Other contribution formats</h3><p>The conference also welcomes communications (at least 6 pages) and abstracts (up to 5 pages), published in a separate collection. Consult the official call for applicable instructions.</p></div><p class="aside-note">The session’s presentation date and time will be announced in the conference program.</p></aside>
+    </div></section>
+
+    <section class="section wrap faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">BEFORE YOU SUBMIT</p><h2 id="faq-title">A few useful <br><em>details.</em></h2><p>Have a question about your paper’s fit?</p><a class="text-link" href="mailto:psouza@novaims.unl.pt?subject=EFS-Drift%202027%20-%20Question%20about%20scope">Contact the lead organizer</a></div><div class="faq-list">
+      <details><summary>Does a paper need to cover every theme?</summary><p>No. A contribution may focus on a specific topic, provided it establishes a clear connection to evolving fuzzy systems in nonstationary environments.</p></details>
+      <details><summary>Are hybrid and neuro-symbolic approaches welcome?</summary><p>Yes, when their connection to evolving fuzzy systems is explicit. Evolutionary optimization is relevant when it supports learning or adaptation; it is not synonymous with evolving systems.</p></details>
+      <details><summary>Are applications and benchmark studies in scope?</summary><p>Yes. We welcome carefully designed applications, analytical contributions, evaluation protocols and reproducible benchmarks, alongside new algorithms.</p></details>
+      <details><summary>What should an evaluation make clear?</summary><p>We encourage authors to state their drift and supervision assumptions, respect temporal order and label availability, and assess appropriate baselines, computational costs and interpretability. These are scientific priorities for the session, not additional conference submission requirements.</p></details>
+      <details><summary>Where can I find the latest submission information?</summary><p>The <a href="https://eusflat.org/2027-conference/program/">official conference call for papers</a> is the source for formats, deadlines and submission instructions. Papers undergo the standard conference peer-review process.</p></details>
+    </div></section>
+    <section class="closing-strip"><div class="wrap closing-inner"><div><p class="eyebrow">SEE YOU IN BARI</p><h2>13–17 September 2027</h2><p>IFSA–EUSFLAT 2027 · Bari, Italy</p></div><a class="button button-outline" href="https://eusflat.org/2027-conference/">Visit the conference website</a></div></section>
+  </main>
+  <footer class="site-footer wrap"><div><a class="footer-brand" href="#home">EFS—Drift <span>2027</span></a><p>A session page by the EFS-Drift organizing team. <br>Conference policies and updates are available on the official IFSA–EUSFLAT website.</p></div><div class="footer-actions"><button type="button" id="share-button">Copy page link</button><span id="share-status" role="status" aria-live="polite"></span><span class="updated">Content checked 21 November 2026</span></div></footer>
+</body>
+</html>
